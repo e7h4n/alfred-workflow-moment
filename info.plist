@@ -3,7 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.michaelwaterfall.datetime-format-converter</string>
+	<string>com.lostjs.moment</string>
+	<key>category</key>
+	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
 		<key>310448B8-B685-469A-8C78-DA99E122316B</key>
@@ -30,13 +32,13 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>pw</string>
+	<string>perfectworks</string>
 	<key>description</key>
-	<string>Convert timestamps and datetime strings into various formats</string>
+	<string>Advanced time utility.</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Timestamp Converter</string>
+	<string>moment</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -150,6 +152,6 @@ https://github.com/nikipore/alfred-python</string>
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/perfectworks/alfred-workflow-moment</string>
 </dict>
 </plist>

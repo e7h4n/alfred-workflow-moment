@@ -2,6 +2,8 @@
 
 Advanced time utility for alfred 2 workflow. Inspired by [moment.js] and [alfred-datetime-format-converter].
 
+[DOWNLOAD LINK]
+
 ## command
 
 ### `now`
@@ -65,3 +67,4 @@ Combination of commands is acceptable. For example: `moment 1455626556616 start 
 
 [alfred-datetime-format]: https://github.com/mwaterfall/alfred-datetime-format-converter
 [moment.js]: http://momentjs.com
+[DOWNLOAD LINKE]: https://github.com/perfectworks/alfred-workflow-moment/releases/download/v1.0/moment.alfredworkflow
