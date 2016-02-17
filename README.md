@@ -60,11 +60,6 @@ Combination of commands is acceptable. For example: `moment 1455626556616 start 
 |minute|m|
 |second|s|
 
-
-![time shift and replace](https://raw.githubusercontent.com/perfectworks/screenshots/master/moment2.png)
-![mutiple time shift](https://raw.githubusercontent.com/perfectworks/screenshots/master/moment2.png)
-![time ceil and floor](https://raw.githubusercontent.com/perfectworks/screenshots/master/moment2.png)
-
 [alfred-datetime-format]: https://github.com/mwaterfall/alfred-datetime-format-converter
 [moment.js]: http://momentjs.com
 [DOWNLOAD LINK]: https://github.com/perfectworks/alfred-workflow-moment/releases/download/v1.0/moment.alfredworkflow
