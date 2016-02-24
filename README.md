@@ -68,7 +68,7 @@ Please note that the `format` command will all rest arguments as format string, 
 |minute|m|
 |second|s|
 
-##### supported format token
+## supported format token
 
 Because python library [arrow] is chosen to deal with time, you can use the following tokens for formatting and parseing time:
 
@@ -103,7 +103,18 @@ Because python library [arrow] is chosen to deal with time, you can use the foll
 |**Timezone**                    |ZZZ           |Asia/Baku, Europe/Warsaw, GMT ...    |
 |**Timestamp**                   |X             |1381685817                                 |
 
+## Planned features
+
+* Save custom format by alfred setting storage
+* Time string parsing
+
+Please be free to propose feature by create github issue.
+
+## License
+
+MIT
+
 [alfred-datetime-format]: https://github.com/mwaterfall/alfred-datetime-format-converter
 [moment.js]: http://momentjs.com
-[DOWNLOAD LINK]: https://github.com/perfectworks/alfred-workflow-moment/releases/download/v1.0/moment.alfredworkflow
+[DOWNLOAD LINK]: https://github.com/perfectworks/alfred-workflow-moment/releases/download/v1.1/moment.alfredworkflow
 [arrow]: http://crsmithdev.com/arrow/#tokens
