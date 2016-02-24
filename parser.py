@@ -20,6 +20,8 @@ def process(wf, args):
     wf.logger.debug(ast)
     target_time = arrow.now()
 
+    presetFormat = None
+
     for func in ast:
         funcName = func[0]
         args = []
@@ -56,10 +58,16 @@ def process(wf, args):
             target_time = target_time.ceil(args[0])
             continue
 
-    # Add an item to Alfred feedback
-    add_item(wf, str(int(time.mktime(target_time.datetime.timetuple()) * 1e3 + target_time.datetime.microsecond / 1e3)), 'timestamp')
-    add_item(wf, target_time.humanize(), 'humanize')
-    add_item(wf, target_time.format('YYYY-MM-DD HH:mm:ss ZZ'), 'YYYY-MM-DD HH:mm:ss ZZ')
+        if funcName == 'format' and len(args) > 0:
+            presetFormat = ' '.join(args)
+
+    if presetFormat is not None:
+        add_item(wf, target_time.format(presetFormat), presetFormat)
+    else:
+        # Add an item to Alfred feedback
+        add_item(wf, str(int(time.mktime(target_time.datetime.timetuple()) * 1e3 + target_time.datetime.microsecond / 1e3)), 'timestamp')
+        add_item(wf, target_time.humanize(), 'humanize')
+        add_item(wf, target_time.format('YYYY-MM-DD HH:mm:ss ZZ'), 'YYYY-MM-DD HH:mm:ss ZZ')
 
     # Send output to Alfred
     wf.send_feedback()

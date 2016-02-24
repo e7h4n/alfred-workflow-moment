@@ -58,6 +58,7 @@ KEYWORD_TO = 'to'
 KEYWORD_START = 'start'
 KEYWORD_OF = 'of'
 KEYWORD_END = 'end'
+KEYWORD_FORMAT = 'format'
 
 STATUS_INIT = 0
 STATUS_SHIFT = 1
@@ -118,6 +119,13 @@ def parse(args):
                 syntax_error(args, idx)
 
             status = STATUS_OF
+
+        elif query == KEYWORD_FORMAT:
+            if status != STATUS_INIT:
+                syntax_error(args, idx)
+
+            ast.append(['format'] + args[idx + 1:])
+            break
 
         else:
             syntax_error(args, idx)
