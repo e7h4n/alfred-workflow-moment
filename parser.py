@@ -1,11 +1,15 @@
+#!/usr/bin/python
+# encoding: utf-8
+
 import arrow
 from dateutil import tz
 import time
+import moment_format
 from ast import parse as parseAST
 from ast import ASTSyntaxError
 
 def add_item(wf, title, desc):
-    wf.add_item(title, arg = title, valid = True)
+    wf.add_item(title, arg = title, subtitle = desc, valid = True)
 
 def process(wf, args):
     log = wf.logger
@@ -17,7 +21,6 @@ def process(wf, args):
         wf.send_feedback()
         return
 
-    wf.logger.debug(ast)
     target_time = arrow.now()
 
     presetFormat = None
@@ -65,9 +68,16 @@ def process(wf, args):
         add_item(wf, target_time.format(presetFormat), presetFormat)
     else:
         # Add an item to Alfred feedback
-        add_item(wf, str(int(time.mktime(target_time.datetime.timetuple()) * 1e3 + target_time.datetime.microsecond / 1e3)), 'timestamp')
-        add_item(wf, target_time.humanize(), 'humanize')
-        add_item(wf, target_time.format('YYYY-MM-DD HH:mm:ss ZZ'), 'YYYY-MM-DD HH:mm:ss ZZ')
+        timestamp = str(int(time.mktime(target_time.datetime.timetuple()) * 1e3 + target_time.datetime.microsecond / 1e3))
+        wf.add_item(timestamp, subtitle = u'Timestamp, ' + target_time.humanize(), arg = timestamp, valid = True)
+
+        formats = moment_format.load_format(wf)
+        if len(formats) == 0:
+            add_item(wf, target_time.format('YYYY-MM-DD HH:mm:ss ZZ'), 'Standard format, you can use "format-moment" to add your format.')
+        else:
+            for formatStr in formats:
+                value = target_time.format(formatStr)
+                wf.add_item(value, subtitle = 'Saved format: "' + formatStr + '"', arg = value, valid = True)
 
     # Send output to Alfred
     wf.send_feedback()
