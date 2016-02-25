@@ -49,6 +49,14 @@ Format time by specified *format*. The format token table For example `moment fo
 
 ![moment format MMMM DD, YYYY](https://raw.githubusercontent.com/perfectworks/screenshots/master/moment7.png)
 
+### `format-manager`
+
+List all saved time formats, press `CMD+ENTER` to delete.
+
+### `format-manager add <format string>`
+
+Add a time format to storage, which can be used for `moment`.
+
 ## Combine command
 
 Combination of commands is acceptable. For example: `moment 1455626556616 start of minute set hour 4 set day 1 end of minute `.
