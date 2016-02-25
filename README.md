@@ -100,7 +100,8 @@ Because python library [arrow] is chosen to deal with time, you can use the foll
 |                                |s             |0, 1, 2 ... 58, 59                         |
 |                                |SS            |00, 01, 02 ... 98, 99                      |
 |                                |S             |0, 1, 2 ... 8, 9                           |
-|**Timezone**                    |ZZZ           |Asia/Baku, Europe/Warsaw, GMT ...    |
+|**Timezone**                    |Z           |+0800|
+||ZZ           |+08:00|
 |**Timestamp**                   |X             |1381685817                                 |
 
 ## Planned features
