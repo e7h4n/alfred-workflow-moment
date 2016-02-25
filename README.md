@@ -125,5 +125,5 @@ MIT
 
 [alfred-datetime-format]: https://github.com/mwaterfall/alfred-datetime-format-converter
 [moment.js]: http://momentjs.com
-[DOWNLOAD LINK]: https://github.com/perfectworks/alfred-workflow-moment/releases/download/v1.1/moment.alfredworkflow
+[DOWNLOAD LINK]: https://github.com/perfectworks/alfred-workflow-moment/releases
 [arrow]: http://crsmithdev.com/arrow/#tokens

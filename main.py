@@ -25,8 +25,14 @@ def main(wf):
     elif action == 'delFormat':
         moment_format.del_format(wf, args[1:])
 
-if __name__ == '__main__':
-    wf = Workflow()
-    wf.data_serializer = 'json'
-    log = wf.logger
-    sys.exit(wf.run(main))
+wf = Workflow({
+    'github_slug': 'perfectworks/alfred-workflow-moment',
+    'frequency': 1
+})
+
+if wf.update_available:
+    wf.start_update()
+
+wf.data_serializer = 'json'
+log = wf.logger
+sys.exit(wf.run(main))
