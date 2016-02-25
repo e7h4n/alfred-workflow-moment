@@ -10,6 +10,14 @@ Advanced time utility for alfred 2 workflow. Inspired by [moment.js] and [alfred
 
 Get current timestamp and formatted time.
 
+### `format-manager`
+
+List all saved time formats, press `CMD+ENTER` to delete.
+
+### `format-manager add <format string>`
+
+Add a time format to storage, which can be used for `moment`.
+
 ### `moment [arg]...`
 
 Calculate timestamp by arguments. There is servals calculate command:
@@ -45,17 +53,9 @@ Get end of the time span which split by specified *attribute*. For example `mome
 
 #### `format <format string>`
 
-Format time by specified *format*. The format token table For example `moment format MMMM DD, YYYY`.
+Format time by specified *format*. If there is no `format` command, moment will use saved format string to format time, or a default format. For example `moment format MMMM DD, YYYY`.
 
 ![moment format MMMM DD, YYYY](https://raw.githubusercontent.com/perfectworks/screenshots/master/moment7.png)
-
-### `format-manager`
-
-List all saved time formats, press `CMD+ENTER` to delete.
-
-### `format-manager add <format string>`
-
-Add a time format to storage, which can be used for `moment`.
 
 ## Combine command
 
