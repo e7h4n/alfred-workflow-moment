@@ -25,7 +25,7 @@ def main(wf):
     elif action == 'delFormat':
         moment_format.del_format(wf, args[1:])
 
-wf = Workflow({
+wf = Workflow(update_settings = {
     'github_slug': 'perfectworks/alfred-workflow-moment',
     'frequency': 1
 })
