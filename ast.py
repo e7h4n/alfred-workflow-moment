@@ -18,6 +18,9 @@ def is_shift(s):
     return is_number(s[1:])
 
 timeKeywords = {
+    'timezone': 'timezone',
+    'tz': 'timezone',
+
     'year': 'year',
     'years': 'year',
     'y': 'year',
@@ -73,7 +76,11 @@ def parse(args):
     status = STATUS_INIT
     for idx, query in enumerate(args):
         if is_shift(query):
-            if status != STATUS_INIT:
+            if status == STATUS_SET_UNIT:
+                ast[-1].append(float(query))
+                status = STATUS_INIT
+                continue
+            elif status != STATUS_INIT:
                 syntax_error(args, idx)
 
             ast.append(['shift', float(query)])

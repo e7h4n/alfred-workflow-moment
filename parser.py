@@ -43,8 +43,22 @@ def process(wf, args):
 
         if funcName == 'set':
             params = {}
-            params[args[0]] = int(args[1])
-            target_time = target_time.replace(**params)
+            if args[0] == 'timezone':
+                timezone = str(abs(int(args[1]))) + ':00'
+                if abs(args[1]) < 10:
+                    timezone = '0' + timezone
+
+                if args[1] < 0:
+                    timezone = '-' + timezone
+                else:
+                    timezone = '+' + timezone
+
+                log.debug(timezone)
+                target_time = target_time.to(timezone)
+
+            else:
+                params[args[0]] = int(args[1])
+                target_time = target_time.replace(**params)
             continue
 
         if funcName == 'shift':

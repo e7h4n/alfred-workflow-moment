@@ -35,9 +35,9 @@ Shift time. *operator* is like `+1`, `-100`. *attribute* is like `year`, `month`
 
 #### `set <attribute> <number> `
 
-Replace specified attribute. For example: `moment set hour 4`
+Replace specified attribute. For example: `moment set hour 4 set tz -7`
 
-![moment set hour 4](https://raw.githubusercontent.com/perfectworks/screenshots/master/moment3.png)
+![moment set hour 4 set tz -7](https://raw.githubusercontent.com/perfectworks/screenshots/master/moment3.png)
 
 #### `start of <attribute>`
 
@@ -67,14 +67,15 @@ Please note that the `format` command will all rest arguments as format string, 
 
 ## supported time attributes
 
-| attribute        | alias           |
-| ------------- |:-------------:|
-|year|y|
-|month|M|
-|day|d|
-|hour|h|
-|minute|m|
-|second|s|
+| attribute        | alias           | value |
+| ------------- |:-------------:| |
+|year|y| |
+|month|M| 1 - 12 |
+|day|d| 1 - 31 |
+|hour|h| 0 - 23 |
+|minute|m| 0 - 59 |
+|second|s| 0 - 59 |
+|timezone|tz| -12 - +12 (number without plus is ok) |
 
 ## supported format token
 
