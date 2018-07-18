@@ -1,6 +1,6 @@
 # alfred-workflow-moment
 
-Advanced time utility for alfred 2 workflow. Inspired by [moment.js] and [alfred-datetime-format-converter].
+Advanced time utility for Alfred 2/3 workflow. Inspired by [moment.js] and [alfred-datetime-format-converter].
 
 [DOWNLOAD LINK]
 
