@@ -6,19 +6,19 @@ Advanced time utility for Alfred 2/3 workflow. Inspired by [moment.js] and [alfr
 
 ## command
 
-### `now`
+### `now` `m`
 
 Get current timestamp and formatted time.
 
-### `format-manager`
+### `format-moment`
 
 List all saved time formats, press `CMD+ENTER` to delete.
 
-### `format-manager add <format string>`
+### `format-moment add <format string>`
 
 Add a time format to storage, which can be used for `moment`.
 
-### `moment [arg]...`
+### `moment [arg]...` `m [arg]...`
 
 Calculate timestamp by arguments. There is servals calculate command:
 
