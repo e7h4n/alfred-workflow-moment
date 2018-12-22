@@ -67,58 +67,51 @@ Please note that the `format` command will all rest arguments as format string, 
 
 ## supported time attributes
 
-| attribute        | alias           | value |
-| ------------- |:-------------:| |
-|year|y| |
-|month|M| 1 - 12 |
-|day|d| 1 - 31 |
-|hour|h| 0 - 23 |
-|minute|m| 0 - 59 |
-|second|s| 0 - 59 |
-|timezone|tz| -12 - +12 (number without plus is ok) |
+| attribute     | alias           | value                                 |
+|---------------|-----------------|---------------------------------------|
+| year          | y               |                                       |
+| month         | M               | 1 - 12                                |
+| day           | d               | 1 - 31                                |
+| hour          | h               | 0 - 23                                |
+| minute        | m               | 0 - 59                                |
+| second        | s               | 0 - 59                                |
+| timezone      | tz              | -12 - +12 (number without plus is ok) |
 
 ## supported format token
 
 Because python library [arrow] is chosen to deal with time, you can use the following tokens for formatting and parseing time:
 
-|                                |Token         |Output                                     |
-|--------------------------------|--------------|-------------------------------------------|
-|**Year**                        |YYYY          |2000, 2001, 2002 ... 2012, 2013            |
-|                                |YY            |00, 01, 02 ... 12, 13                      |
-|**Month**                       |MMMM          |January, February, March ...         |
-|                                |MMM           |Jan, Feb, Mar ...                    |
-|                                |MM            |01, 02, 03 ... 11, 12                      |
-|                                |M             |1, 2, 3 ... 11, 12                         |
-|**Day of Year**                 |DDDD          |001, 002, 003 ... 364, 365                 |
-|                                |DDD           |1, 2, 3 ... 4, 5                           |
-|**Day of Month**                |DD            |01, 02, 03 ... 30, 31                      |
-|                                |D             |1, 2, 3 ... 30, 31                         |
-|                                |Do            |1st, 2nd, 3rd ... 30th, 31st               |
-|**Day of Week**                 |dddd          |Monday, Tuesday, Wednesday ...       |
-|                                |ddd           |Mon, Tue, Wed ...                    |
-|                                |d             |1, 2, 3 ... 6, 7                           |
-|**Hour**                        |HH            |00, 01, 02 ... 23, 24                      |
-|                                |H             |0, 1, 2 ... 23, 24                         |
-|                                |hh            |01, 02, 03 ... 11, 12                      |
-|                                |h             |1, 2, 3 ... 11, 12                         |
-|**AM / PM**                     |A             |AM, PM, am, pm                       |
-|                                |a             |am, pm                               |
-|**Minute**                      |mm            |00, 01, 02 ... 58, 59                      |
-|                                |m             |0, 1, 2 ... 58, 59                         |
-|**Second**                      |ss            |00, 01, 02 ... 58, 59                      |
-|                                |s             |0, 1, 2 ... 58, 59                         |
-|                                |SS            |00, 01, 02 ... 98, 99                      |
-|                                |S             |0, 1, 2 ... 8, 9                           |
-|**Timezone**                    |Z           |+0800|
-||ZZ           |+08:00|
-|**Timestamp**                   |X             |1381685817                                 |
-
-## Planned features
-
-* Save custom format by alfred setting storage
-* Time string parsing
-
-Please be free to propose feature by create github issue.
+|                                  | Token          | Output                                      |
+| -------------------------------- | -------------- | ------------------------------------------- |
+| **Year**                         | YYYY           | 2000, 2001, 2002 ... 2012, 2013             |
+|                                  | YY             | 00, 01, 02 ... 12, 13                       |
+| **Month**                        | MMMM           | January, February, March ...                |
+|                                  | MMM            | Jan, Feb, Mar ...                           |
+|                                  | MM             | 01, 02, 03 ... 11, 12                       |
+|                                  | M              | 1, 2, 3 ... 11, 12                          |
+| **Day of Year**                  | DDDD           | 001, 002, 003 ... 364, 365                  |
+|                                  | DDD            | 1, 2, 3 ... 4, 5                            |
+| **Day of Month**                 | DD             | 01, 02, 03 ... 30, 31                       |
+|                                  | D              | 1, 2, 3 ... 30, 31                          |
+|                                  | Do             | 1st, 2nd, 3rd ... 30th, 31st                |
+| **Day of Week**                  | dddd           | Monday, Tuesday, Wednesday ...              |
+|                                  | ddd            | Mon, Tue, Wed ...                           |
+|                                  | d              | 1, 2, 3 ... 6, 7                            |
+| **Hour**                         | HH             | 00, 01, 02 ... 23, 24                       |
+|                                  | H              | 0, 1, 2 ... 23, 24                          |
+|                                  | hh             | 01, 02, 03 ... 11, 12                       |
+|                                  | h              | 1, 2, 3 ... 11, 12                          |
+| **AM / PM**                      | A              | AM, PM, am, pm                              |
+|                                  | a              | am, pm                                      |
+| **Minute**                       | mm             | 00, 01, 02 ... 58, 59                       |
+|                                  | m              | 0, 1, 2 ... 58, 59                          |
+| **Second**                       | ss             | 00, 01, 02 ... 58, 59                       |
+|                                  | s              | 0, 1, 2 ... 58, 59                          |
+|                                  | SS             | 00, 01, 02 ... 98, 99                       |
+|                                  | S              | 0, 1, 2 ... 8, 9                            |
+| **Timezone**                     | Z              | +0800                                       |
+|                                  | ZZ             | +08:00                                      |
+| **Timestamp**                    | X              | 1381685817                                  |
 
 ## License
 
