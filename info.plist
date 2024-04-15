@@ -410,7 +410,7 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Advanced time utility for Alfred 2/3 workflow. Inspired by [moment.js] and [alfred-datetime-format-converter].
+	<string>Advanced time utility for Alfred workflow. Inspired by [moment.js] and [alfred-datetime-format-converter].
 
 [moment.js]: http://momentjs.com
 [alfred-datetime-format]: https://github.com/mwaterfall/alfred-datetime-format-converter</string>
@@ -485,7 +485,7 @@
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.2.6</string>
+	<string>1.2.7</string>
 	<key>webaddress</key>
 	<string>https://github.com/e7h4n/alfred-workflow-moment</string>
 </dict>
