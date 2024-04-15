@@ -5,8 +5,8 @@ import arrow
 from dateutil import tz
 import time
 import moment_format
-from ast import parse as parseAST
-from ast import ASTSyntaxError
+from moment_ast import parse as parseAST
+from moment_ast import ASTSyntaxError
 
 def add_item(wf, title, desc):
     wf.add_item(title, arg = title, subtitle = desc, valid = True)

@@ -4,8 +4,6 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.lostjs.moment</string>
-	<key>category</key>
-	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
 		<key>2AD95D17-931E-4ACD-BF8D-3AFB554DDDB4</key>
@@ -114,6 +112,8 @@
 				<false/>
 				<key>clipboardtext</key>
 				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
 				<key>transient</key>
 				<false/>
 			</dict>
@@ -122,13 +122,19 @@
 			<key>uid</key>
 			<string>B992DF40-31A6-43F3-BA6B-6A6AB9F02812</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
@@ -146,7 +152,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>python main.py parse {query}</string>
+				<string>python3 main.py parse {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -165,13 +171,19 @@
 			<key>uid</key>
 			<string>E39428C3-EE89-4D16-836B-1D31A4974660</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>escaping</key>
@@ -189,7 +201,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>python main.py parse</string>
+				<string>python3 main.py parse</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -208,7 +220,7 @@
 			<key>uid</key>
 			<string>310448B8-B685-469A-8C78-DA99E122316B</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -229,13 +241,19 @@
 			<key>uid</key>
 			<string>1498E894-B5BA-4724-8CD6-118110D985CB</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
@@ -253,7 +271,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>python main.py parse {query}</string>
+				<string>python3 main.py parse {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -272,7 +290,7 @@
 			<key>uid</key>
 			<string>2AD95D17-931E-4ACD-BF8D-3AFB554DDDB4</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -295,7 +313,7 @@
 			<key>uid</key>
 			<string>9346E14B-660C-4679-BF03-D20C6E5A60BB</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -316,7 +334,7 @@
 			<key>uid</key>
 			<string>F62CA940-5FB0-452A-8ECD-B6F3146B5182</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -339,13 +357,19 @@
 			<key>uid</key>
 			<string>2E604D0E-A789-4B5F-B5F8-DFE9A4E5F80B</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
@@ -363,7 +387,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>python main.py format {query}</string>
+				<string>python3 main.py format {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -382,85 +406,86 @@
 			<key>uid</key>
 			<string>2B9F3B61-0101-4A38-817C-B7A8A80E934E</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>v0.2
+	<string>Advanced time utility for Alfred 2/3 workflow. Inspired by [moment.js] and [alfred-datetime-format-converter].
 
-This workflow uses these awesome Python projects:
-
-Delorean by Mahdi Yusuf
-https://github.com/myusuf3/delorean
-
-Alfred Python by Jan Müller
-https://github.com/nikipore/alfred-python</string>
+[moment.js]: http://momentjs.com
+[alfred-datetime-format]: https://github.com/mwaterfall/alfred-datetime-format-converter</string>
 	<key>uidata</key>
 	<dict>
 		<key>1498E894-B5BA-4724-8CD6-118110D985CB</key>
 		<dict>
 			<key>xpos</key>
-			<integer>450</integer>
+			<real>450</real>
 			<key>ypos</key>
-			<integer>250</integer>
+			<real>250</real>
 		</dict>
 		<key>2AD95D17-931E-4ACD-BF8D-3AFB554DDDB4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>250</integer>
+			<real>250</real>
 		</dict>
 		<key>2B9F3B61-0101-4A38-817C-B7A8A80E934E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>480</integer>
+			<real>480</real>
 		</dict>
 		<key>2E604D0E-A789-4B5F-B5F8-DFE9A4E5F80B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>250</integer>
+			<real>250</real>
 			<key>ypos</key>
-			<integer>480</integer>
+			<real>480</real>
 		</dict>
 		<key>310448B8-B685-469A-8C78-DA99E122316B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>130</integer>
+			<real>130</real>
 		</dict>
 		<key>9346E14B-660C-4679-BF03-D20C6E5A60BB</key>
 		<dict>
 			<key>xpos</key>
-			<integer>250</integer>
+			<real>250</real>
 			<key>ypos</key>
-			<integer>360</integer>
+			<real>360</real>
 		</dict>
 		<key>B992DF40-31A6-43F3-BA6B-6A6AB9F02812</key>
 		<dict>
 			<key>xpos</key>
-			<integer>450</integer>
+			<real>450</real>
 			<key>ypos</key>
-			<integer>10</integer>
+			<real>15</real>
 		</dict>
 		<key>E39428C3-EE89-4D16-836B-1D31A4974660</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>10</integer>
+			<real>15</real>
 		</dict>
 		<key>F62CA940-5FB0-452A-8ECD-B6F3146B5182</key>
 		<dict>
 			<key>xpos</key>
-			<integer>450</integer>
+			<real>450</real>
 			<key>ypos</key>
-			<integer>370</integer>
+			<real>370</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.2.6</string>
 	<key>webaddress</key>
 	<string>https://github.com/perfectworks/alfred-workflow-moment</string>
 </dict>
