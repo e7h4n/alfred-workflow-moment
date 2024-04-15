@@ -96,7 +96,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>perfectworks</string>
+	<string>e7h4n</string>
 	<key>description</key>
 	<string>Advanced time utility.</string>
 	<key>disabled</key>
@@ -225,27 +225,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>Moment format has been added.</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>1498E894-B5BA-4724-8CD6-118110D985CB</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -291,6 +270,27 @@
 			<string>2AD95D17-931E-4ACD-BF8D-3AFB554DDDB4</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>Moment format has been added.</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>1498E894-B5BA-4724-8CD6-118110D985CB</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -487,6 +487,6 @@
 	<key>version</key>
 	<string>1.2.6</string>
 	<key>webaddress</key>
-	<string>https://github.com/perfectworks/alfred-workflow-moment</string>
+	<string>https://github.com/e7h4n/alfred-workflow-moment</string>
 </dict>
 </plist>

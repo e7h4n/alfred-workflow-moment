@@ -1,6 +1,6 @@
 # alfred-workflow-moment
 
-Advanced time utility for Alfred 2/3 workflow. Inspired by [moment.js] and [alfred-datetime-format-converter].
+Advanced time utility for Alfred workflow. Inspired by [moment.js] and [alfred-datetime-format-converter].
 
 [DOWNLOAD LINK]
 
@@ -22,46 +22,46 @@ Add a time format to storage, which can be used for `moment`.
 
 Calculate timestamp by arguments. There is servals calculate command:
 
-#### `<timestamp>`: 
+#### `<timestamp>`:
 
 Init/reset time. both UNIX timestamp and timestamp with milliseconds are supported. For example: `moment 1455624282913` or `moment 1455624282`.
 
-![moment 1455624282913](https://raw.githubusercontent.com/perfectworks/screenshots/master/moment1.png)
+![moment 1455624282913](https://raw.githubusercontent.com/e7h4n/screenshots/master/moment1.png)
 
 #### `<operator> <attribute>`
 Shift time. *operator* is like `+1`, `-100`. *attribute* is like `year`, `month`, `day`. For example: `moment +1 day`.
 
-![moment +1 day](https://raw.githubusercontent.com/perfectworks/screenshots/master/moment2.png)
+![moment +1 day](https://raw.githubusercontent.com/e7h4n/screenshots/master/moment2.png)
 
 #### `set <attribute> <number> `
 
 Replace specified attribute. For example: `moment set hour 4 set tz -7`
 
-![moment set hour 4 set tz -7](https://raw.githubusercontent.com/perfectworks/screenshots/master/moment3.png)
+![moment set hour 4 set tz -7](https://raw.githubusercontent.com/e7h4n/screenshots/master/moment3.png)
 
 #### `start of <attribute>`
 
 Get start of the time span which split by specified *attribute*. For example `moment start of year`.
 
-![moment start of year](https://raw.githubusercontent.com/perfectworks/screenshots/master/moment4.png)
+![moment start of year](https://raw.githubusercontent.com/e7h4n/screenshots/master/moment4.png)
 
 #### `end of <attribute>`
 
 Get end of the time span which split by specified *attribute*. For example `moment end of year`.
 
-![moment end of year](https://raw.githubusercontent.com/perfectworks/screenshots/master/moment5.png)
+![moment end of year](https://raw.githubusercontent.com/e7h4n/screenshots/master/moment5.png)
 
 #### `format <format string>`
 
 Format time by specified *format*. If there is no `format` command, moment will use saved format string to format time, or a default format. For example `moment format MMMM DD, YYYY`.
 
-![moment format MMMM DD, YYYY](https://raw.githubusercontent.com/perfectworks/screenshots/master/moment7.png)
+![moment format MMMM DD, YYYY](https://raw.githubusercontent.com/e7h4n/screenshots/master/moment7.png)
 
 ## Combine command
 
 Combination of commands is acceptable. For example: `moment 1455626556616 start of minute set hour 4 set day 1 end of minute `.
 
-![combination of commands](https://raw.githubusercontent.com/perfectworks/screenshots/master/moment6.png)
+![combination of commands](https://raw.githubusercontent.com/e7h4n/screenshots/master/moment6.png)
 
 Please note that the `format` command will all rest arguments as format string, so `format` command should always be the last command.
 
@@ -119,5 +119,5 @@ MIT
 
 [alfred-datetime-format]: https://github.com/mwaterfall/alfred-datetime-format-converter
 [moment.js]: http://momentjs.com
-[DOWNLOAD LINK]: https://github.com/perfectworks/alfred-workflow-moment/releases
+[DOWNLOAD LINK]: https://github.com/e7h4n/alfred-workflow-moment/releases
 [arrow]: http://crsmithdev.com/arrow/#tokens
